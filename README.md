@@ -73,3 +73,28 @@ notes-app-localstorage/
 -📤 Export / Import Notes
 -🔄 Drag & Drop Reordering
 
+---
+
+## 🔮 Possible Improvements
+
+- Add server-side pagination
+- Add sorting by name or city
+- Add advanced filtering options
+- Add dark mode toggle
+- Convert into React component-based architecture
+- Add caching mechanism
+
+---
+
+## 👨‍💻 Author
+
+**Rajeev Ranjan Singh**  
+Frontend Developer
+
+---
+
+⭐ If you found this project useful, consider giving it a star.
+
+## 🏗 Project Structure
+
+
