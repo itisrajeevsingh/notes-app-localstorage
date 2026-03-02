@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <h2>Notes</h2>
+      <button id="addNoteBtn">+ New Note</button>
+    </div>
+
+    <div class="sidebar-bottom">
+      <div class="stat">
+        <span>Total Notes</span>
+        <strong id="noteCount">0</strong>
+      </div>
+      <small>Saved in Local Storage</small>
+    </div>
+  </aside>
+
+  <div class="overlay hidden" id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- Main -->
+  <main class="main">
+
+    <div class="header">
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <input type="text" id="searchInput" placeholder="Search notes...">
+    </div>
+
+    <div class="notes-grid" id="notesContainer"></div>
+
+  </main>
+
+</div>
+
+<!-- Create/Edit Modal -->
+<div class="modal hidden" id="noteModal">
+  <div class="modal-content">
+    <h3>Note</h3>
+    <input type="text" id="noteTitle" placeholder="Title">
+    <textarea id="noteContent" placeholder="Write your note..."></textarea>
+    <div class="modal-actions">
+      <button id="saveNote">Save</button>
+      <button id="cancelNote">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- View Modal -->
+<div class="modal hidden" id="viewModal">
+  <div class="modal-content">
+    <h3 id="viewTitle"></h3>
+    <div id="viewContent" class="view-body"></div>
+    <button onclick="closeView()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
